@@ -1,0 +1,90 @@
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-flock: #2496E2;
+$color-flock-dark: #196EA7;
+$color-fill: #f7f9fb;
+
+// font colors
+$color-heading: #2C3643;
+$color-body: #47525D;
+$color-silver: #67747C;
+
+
+// border colors
+$color-border: #dee4e6;
+$color-border-light: #f0f4f5;
+
+// special colors
+$color-danger: #e03e3e;
+$color-warning: #ead016;
+$color-success: #2db937;
+
+
+/*
+*     COLOR CLASSES
+*/
+
+.bg-white {
+  background: $color-white;
+}
+.bg-black {
+  background: $color-black;
+}
+.bg-flock {
+  background: $color-flock;
+}
+.bg-flock-dark {
+  background: $color-flock-dark;
+}
+.bg-fill {
+  background: $color-fill;
+}
+
+/*
+*     Font clasees
+*/
+
+.color-white {
+  color: $color-white;
+}
+.color-black {
+  color: $color-black;
+}
+.color-flock {
+  color: $color-flock;
+}
+.color-flock-dark {
+  color: $color-flock-dark;
+}
+
+.color-heading {
+  color: $color-heading;
+}
+.color-body {
+  color: $color-body;
+}
+.color-silver {
+  color: $color-silver;
+}
+
+.color-danger {
+  color: $color-danger;
+}
+.color-warning {
+  color: $color-warning;
+}
+.color-success {
+  color: $color-success;
+}
+
+
+// borders
+.border {
+  border: 1px solid $color-border;
+}
+.border-light {
+  border: 1px solid $color-border-light;
+}
+.border-nil {
+  border: 0;
+}

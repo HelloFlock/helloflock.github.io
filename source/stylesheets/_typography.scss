@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900';
+
+body {
+  font-family: $font-lato;
+  font-size: $base-font-size;
+  font-weight: $body-font-weight;
+  line-height: $base-line-height;
+  color: $color-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-lato;
+  font-weight: $heading-font-weight;
+  color: $color-heading;
+}
+
+h1 {
+  font-size: $font-size-mega;
+  @extend .margin-top-l;
+  @extend .margin-bottom-xm;
+}
+
+h2 {
+  font-size: $font-size-bigger;
+  @extend .margin-top-xm;
+  @extend .margin-bottom-xm;
+}
+
+h3 {
+  font-size: $font-size-big;
+  @extend .margin-top-m;
+  @extend .margin-bottom-s;
+}
+
+h4 {
+  font-size: $font-size-large;
+  @extend .margin-top-m;
+  @extend .margin-bottom-s;
+}
+
+h5 {
+  font-size: $font-size-medium;
+  @extend .margin-top-s;
+  @extend .margin-bottom-s;
+}
+
+.type-bold {
+  font-weight: 600;
+}

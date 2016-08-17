@@ -1,0 +1,23 @@
+{
+  "name": "flock-style",
+  "authors": [
+    "Nithin David <webofnithin@gmail.com>"
+  ],
+  "description": "StyleGuide for Flock App",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "modernizr": "~2.8.1",
+    "Ionicons": "ionicons#^2.0.1"
+  }
+}

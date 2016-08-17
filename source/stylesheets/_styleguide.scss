@@ -1,0 +1,23 @@
+.color-box {
+  .color-preview {
+    height: 72px;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    padding: 1.5rem 0;
+
+    li {
+      padding: .5rem 0;
+      font-size: $font-size-small;
+      span {
+        display: block;
+      }
+      .type-bold {
+        @extend .color-silver;
+      }
+    }
+  }
+
+}
