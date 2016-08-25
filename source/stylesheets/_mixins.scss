@@ -1,0 +1,19 @@
+@mixin buttonColorMixin($baseColor) {
+  background: $baseColor;
+  border-color: darken( $baseColor, 1% );
+  &:hover {
+    background: darken($baseColor, 5%);
+    color: $color-white;
+  }
+}
+
+@mixin outlineButtonColorMixin($baseColor) {
+  color: $baseColor;
+  border-color: lighten( $baseColor, 10% );
+  &:hover,
+  &:focus,
+  &:active {
+    background: $baseColor;
+    color: $color-white;
+  }
+}

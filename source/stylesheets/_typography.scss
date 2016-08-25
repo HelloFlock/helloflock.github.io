@@ -3,7 +3,7 @@
 body {
   font-family: $font-lato;
   font-size: $base-font-size;
-  font-weight: $body-font-weight;
+  font-weight: $font-weight-light;
   line-height: $base-line-height;
   color: $color-body;
 }
@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
   font-family: $font-lato;
-  font-weight: $heading-font-weight;
+  font-weight: $font-weight-bold;
   color: $color-heading;
 }
 
@@ -49,6 +49,42 @@ h5 {
   @extend .margin-bottom-s;
 }
 
+h6 {
+  font-size: $font-size-default;
+  @extend .margin-top-s;
+  @extend .margin-bottom-s;
+}
+
 .type-bold {
-  font-weight: 600;
+  font-weight: $font-weight-bold;
+}
+
+.page-title {
+  font-size: $font-size-big;
+  font-weight: $font-weight-normal;
+  margin: $space-large 0 $space-normal;
+}
+
+.page-sub-title {
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  margin: $space-normal 0;
+}
+
+.block-title {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  margin: $space-medium 0 $space-slab;
+}
+
+.sub-block-title {
+  font-size: $font-size-default;
+  font-weight: $font-weight-bold;
+  margin: $space-slab 0;
+}
+
+.text-block-title {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  margin: $space-normal 0;
 }

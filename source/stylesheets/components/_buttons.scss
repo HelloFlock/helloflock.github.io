@@ -1,0 +1,60 @@
+.button {
+  @extend .btn;
+  @include buttonColorMixin($color-flock);
+  color: $color-white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-white;
+  }
+  &.button--success {
+    @include buttonColorMixin($color-success);
+  }
+
+  &.button--warning {
+    @include buttonColorMixin($color-warning);
+  }
+
+  &.button--danger {
+    @include buttonColorMixin($color-danger);
+  }
+}
+
+.button--outline {
+  @extend .btn;
+  background: $color-white;
+  @include outlineButtonColorMixin($color-silver);
+
+  &.button--success {
+    @include outlineButtonColorMixin($color-success);
+  }
+
+  &.button--warning {
+    @include outlineButtonColorMixin($color-warning);
+  }
+
+  &.button--danger {
+    @include outlineButtonColorMixin($color-danger);
+  }
+}
+
+.button--xl {
+  padding: $space-large;
+  font-size: $font-size-medium;
+}
+
+.button--l {
+  padding: $space-medium;
+  font-size: $font-size-default;
+}
+
+.button--s {
+  padding: $space-small $space-medium;
+  font-size: $font-size-small;
+}
+
+.button--xs {
+  padding: $space-smaller $space-small;
+  font-size: $font-size-micro;
+}

@@ -21,3 +21,22 @@
   }
 
 }
+.typo-heading-box {
+  * {
+    margin: $space-normal;
+  }
+}
+.typo-components-box {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  p {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-normal;
+  }
+}
