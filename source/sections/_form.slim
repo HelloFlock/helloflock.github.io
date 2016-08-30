@@ -1,4 +1,4 @@
-section#flock-form.block-form
+section#flock-form.block-form.margin-top-xxxl
   h2.sub-header Form Elements
   h4.sub-header.margin-top-l Text Input
   p
@@ -18,48 +18,48 @@ section#flock-form.block-form
     label.col-md-12
       | Input Label
       input placeholder=("Text field") type="text" /
-    .col-md-6
-      label
-        | Disabled input
-        input.disabled placeholder=("Text field") type="text" disabled=""/
-    .col-md-6
-      label
-        | Select Label
-        select id="" name=""
-          option value=""  Breakfast
-          option value=""  Bacon Pancakes
-          option value=""  Mountain Dew
-          option value=""  Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella
-    .col-md-6
-      label
-        | Prefix/postfix
-        .input-group
-          .input-group-addon $
-          input placeholder="Amount" /
-          .input-group-addon .00
-    .col-md-6
-      label
-        | Prefix
-        .input-group
-          .input-group-addon www.
-          input placeholder="Amount" /
-    .col-md-6
-      label
-        | Postfix
-        .input-group
-          input placeholder="Email" /
-          .input-group-addon @helloflock.com
-    .col-md-6
-      label
-        | Inline icon input
-        .icon-input--left
-          i.ion-ios-telephone-outline
-          input placeholder=("Phone Number") type="text"
-    .col-md-6
-      label
-        | Inline icon input
-        .icon-group
-          textarea placeholder=("The story goes here...")
+
+    label.col-md-6
+      | Disabled input
+      input.disabled placeholder=("Text field") type="text" disabled=""/
+
+    label.col-md-6
+      | Select Label
+      select id="" name=""
+        option value=""  Breakfast
+        option value=""  Bacon Pancakes
+        option value=""  Mountain Dew
+        option value=""  Scrambled eggs with grilled zucchini, spinach, leeks, roasted tomatoes and mozzarella
+
+    label.col-md-6
+      | Prefix/postfix
+      .input-group
+        .input-group-addon $
+        input placeholder="Amount" /
+        .input-group-addon .00
+
+    label.col-md-6
+      | Prefix
+      .input-group
+        .input-group-addon www.
+        input placeholder="Amount" /
+
+    label.col-md-6
+      | Postfix
+      .input-group
+        input placeholder="Email" /
+        .input-group-addon @helloflock.com
+
+    label.col-md-6
+      | Inline Icon Input
+      .icon-input--left
+        i.ion-ios-telephone-outline
+        input placeholder=("Phone Number") type="text"
+
+    label.col-md-6
+      | Inline Icon Input
+      .icon-group
+        textarea placeholder=("The story goes here...")
     .col-md-6
       label Choose Your Favorite
       label.radio-inline
@@ -83,6 +83,6 @@ section#flock-form.block-form
       label.checkbox-inline
         input type="checkbox" value="option3" /
         | Honda
-    .col-md-6
-      label
-        input type = "submit" href="#" value="Submit"
+
+    label.col-md-6
+      input type = "submit" href="#" value="Submit"

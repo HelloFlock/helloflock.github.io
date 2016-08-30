@@ -1,0 +1,44 @@
+table {
+  @extend .table;
+  font-size: $font-size-small;
+  > thead > tr > th,
+  caption + thead > tr:first-child > th,
+  caption + thead > tr:first-child > td,
+  colgroup + thead > tr:first-child > th,
+  colgroup + thead > tr:first-child > td,
+  thead:first-child > tr:first-child > th,
+  thead:first-child > tr:first-child > td {
+    border-bottom: 1px solid $color-border;
+    text-transform: uppercase;
+    font-size: $font-size-mini;
+    line-height: 2.5;
+  }
+
+  > thead > tr > th,
+  > thead > tr > td,
+  > tbody > tr > th,
+  > tbody > tr > td,
+  > tfoot > tr > th,
+  > tfoot > tr > td {
+    border-top: 1px solid $color-border-light;
+    line-height: 1.8;
+  }
+
+  &.--elegent {
+    > thead > tr > th,
+    caption + thead > tr:first-child > th,
+    caption + thead > tr:first-child > td,
+    colgroup + thead > tr:first-child > th,
+    colgroup + thead > tr:first-child > td,
+    thead:first-child > tr:first-child > th,
+    thead:first-child > tr:first-child > td {
+      border-top: 1px solid $color-border;
+      background: $color-fill;
+      line-height: 2.5;
+    }
+  }
+
+  &.--border {
+    border: 1px solid $color-border;
+  }
+}
