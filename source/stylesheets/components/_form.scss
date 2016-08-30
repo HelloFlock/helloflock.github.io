@@ -1,0 +1,118 @@
+input,
+select,
+textarea {
+  @extend .form-control;
+  border: 1px solid $color-border-input;
+  color: #34495e;
+  height: $form-input-height;
+  width: 100%;
+  line-height: 1.4;
+  margin: 0 0 $space-one 0;
+  padding: $space-small $space-slab;
+  border-radius: 2px;
+  box-shadow: none;
+  @include transition(border 0.25s ease-in 0s, color 0.25s ease-in 0s, background-color 0.25s ease-in 0s);
+
+  &.input--small {
+    font-size: $font-size-mini;
+    height: $form-input-height--small;
+  }
+  &.input--medium {
+    font-size: $font-size-medium;
+    height: $form-input-height--medium;
+  }
+  &.input--large {
+    font-size: $font-size-big;
+    height: $form-input-height--large;
+  }
+}
+
+input[type="submit"] {
+  @extend .button;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: $form-radio-height;
+}
+input[disabled] {
+  background: $color-fill;
+}
+textarea {
+  height: auto;
+  width: 100%;
+  min-height: 50px;
+}
+
+
+input:focus,
+select:focus {
+  border-color: $color-flock;
+  outline: 0;
+  box-shadow: none;
+}
+
+label {
+  display: block;
+  font-size: $font-size-small;
+  font-weight: $font-weight-normal;
+  margin-bottom: $space-smaller;
+
+  input,
+  select,
+  textarea {
+    margin-top: $space-smaller;
+  }
+}
+.input-group {
+  margin-top: $space-smaller;
+  margin-bottom: $space-one;
+  .input-group-addon {
+    background: $color-fill;
+    border: 1px solid $color-border-input;
+    color: #34495e;
+    height: $form-input-height;
+    border-radius: 2px;
+
+    &:first-child {
+      @include border-right-radius(0px);
+      border-right: $zero;
+    }
+    &:last-child {
+      @include border-left-radius(0px);
+      border-left: $zero;
+    }
+  }
+  input {
+    margin-top: $zero;
+  }
+}
+.icon-input--left{
+  position: relative;
+  display: block;
+
+  i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    font-size: $font-size-default;
+    line-height: 40px;
+    padding-left: $space-slab;
+  }
+  input {
+    padding-left:$space-large;
+  }
+}
+
+.checkbox-inline,
+.radio-inline {
+  padding-left: $space-medium;
+  margin-bottom: $space-one;
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-left: -$space-medium;
+  }
+}

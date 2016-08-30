@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
-    "modernizr": "~2.8.1",
-    "Ionicons": "ionicons#^2.0.1"
+    "modernizr": "~2.8.1"
   }
 }

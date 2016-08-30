@@ -45,9 +45,7 @@ section#flock-buttons.block-button
     | The default button size is
     code .button--m.
   .button-example
-    button.button.button--xl.margin-right-m type="button"
-      span.glyphicon.glyphicon-star aria-hidden="true"
-      | Extra Large Button
+    button.button.button--xl.margin-right-m type="button" Extra Large Button
     button.button.button--l.margin-right-m type="button"  Large Button
     button.button.button--m.margin-right-m type="button"  Medium Button
     button.button.button--s.margin-right-m type="button"  Small Button
@@ -55,20 +53,35 @@ section#flock-buttons.block-button
 
   h4.sub-header.margin-top-l Icon Buttons
   p
-    | Button sizes are modifiers and needs to be used with
-    code .button,
-    code .button--outline,
-    | or any button type class. The modifiers are
-    code .button--xs,
-    code .button--s,
-    code .button--m,
-    code .button--l
-    | or
-    code .button--xl.
-    | The default button size is
-    code .button--m.
+    | Add Icons to buttons by adding ionicons icon tag eg:
+    code <pre><span style="color: #007700">&lt;button</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;button--icon&quot;</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span><span style="color: #007700">&gt;</span> &#x0000A; <span style="color: #007700">&lt;i</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;ion-plus-round&quot;</span><span style="color: #007700">&gt;&lt;/i&gt;</span> &#x0000A; Primary icon Button &#x0000A;<span style="color: #007700">&lt;/button&gt;</span></pre>
+
+    | and use
+    code .button--icon,
+    | as the button class, Use any modifiers with buttons to change color or size
   .button-example
-    button.button--outline.margin-right-m type="button"  Primary Outlined Button
-    button.button--outline.button--success.margin-right-m type="button"  Success Outlined Button
-    button.button--outline.button--warning.margin-right-m type="button"  Warning Outlined Button
-    button.button--outline.button--danger.margin-right-m type="button"  Danger Outlined Button
+    button.button--icon.margin-right-m type="button"
+      i.ion-plus-round
+      | Primary icon Button
+    button.button--icon.button--success.margin-right-m type="button"
+      i.ion-checkmark
+      | Success icon Button
+    button.button--icon.button--warning.margin-right-m type="button"
+      i.ion-edit
+      | Warning icon Button
+    button.button--icon.button--danger.margin-right-m type="button"
+      i.ion-close-round
+      | Danger icon Button
+
+  h4.sub-header.margin-top-l Special Buttons
+  p
+    h6 Loading button
+    pre <span style="color: #007700">&lt;button</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;button margin-right-m is-loading&quot;</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span><span style="color: #007700">&gt;</span>loading...<span style="color: #007700">&lt;/button&gt;</span>
+
+    button.button.button--warning.margin-right-m.is-loading type="button"
+      | loading...
+
+    h6 Disabled button
+    pre <span style="color: #007700">&lt;button</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;button margin-right-m disabled&quot;</span> <span style="color: #0000CC">type=</span><span style="background-color: #fff0f0">&quot;button&quot;</span><span style="color: #007700">&gt;</span>button<span style="color: #007700">&lt;/button&gt;</span>
+
+    button.button.margin-right-m.disabled type="button" button

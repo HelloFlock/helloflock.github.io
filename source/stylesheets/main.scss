@@ -1,7 +1,9 @@
 // bower:scss
-@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "../../bower_components/Ionicons/scss/ionicons.scss";
+
 // endbower
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 
 @import "variables";
 @import "colors";

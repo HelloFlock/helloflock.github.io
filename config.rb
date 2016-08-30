@@ -4,9 +4,15 @@ require "slim"
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.add_import_path "./bower_components"
+  config.output_style = :compact
+end
+
+after_configuration do
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -50,6 +56,7 @@ require "slim"
 
 # activate :automatic_image_sizes
 activate :bower
+sprockets.append_path File.join root, "bower_components"
 
 set :css_dir, 'stylesheets'
 
