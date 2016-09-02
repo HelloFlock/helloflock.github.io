@@ -3,6 +3,8 @@ $color-black: #000000;
 $color-flock: #2496E2;
 $color-flock-dark: #196EA7;
 $color-fill: #f7f9fb;
+$color-fill-light: #FAFAFA;
+
 
 // font colors
 $color-heading: #2C3643;
@@ -10,6 +12,8 @@ $color-body: #47525D;
 $color-silver: #67747C;
 $color-grey: #9B9D9E;
 
+//Shadow
+$color-shadow: lighten($color-heading, 50%);
 
 // border colors
 $color-border: #dee4e6;

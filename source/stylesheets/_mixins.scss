@@ -17,3 +17,29 @@
     color: $color-white;
   }
 }
+
+@mixin alertTopBorder($color) {
+  border-top: 4px solid saturatedLightenedColor($color);
+}
+
+@function saturatedLightenedColor($color) {
+  @return saturate( lighten( $color, 7%), 10%);
+}
+
+@mixin media-phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

@@ -1,6 +1,11 @@
 $base-font-size: 1.6rem;
 $base-line-height: 1.7;
 $zero: 0;
+
+// Border radius
+$box-radius: 4px;
+
+
 // logo dimens
 $logo-width: 86px;
 $logo-height: 40px;
@@ -46,5 +51,9 @@ $form-input-height: 4.0rem;
 $form-input-height--large: 6.4rem;
 $form-input-height--medium: 5.0rem;
 $form-input-height--small: 3.0rem;
-
 $form-radio-height: 2.0rem;
+
+// Device sizes
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;

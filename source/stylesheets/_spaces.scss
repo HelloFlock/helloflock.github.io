@@ -1,545 +1,172 @@
-.padding-nil {
-  padding: 0;
-}
-.padding-xxs {
-  padding: $space-micro;
-}
-.padding-xs {
-  padding: $space-smaller;
-}
-.padding-s {
-  padding: $space-small;
-}
-.padding-xxm {
-  padding: $space-slab;
-}
-.padding-xm {
-  padding: $space-normal;
-}
-.padding-m {
-  padding: $space-medium;
-}
-.padding-l {
-  padding: $space-large;
-}
-.padding-xl {
-  padding: $space-larger;
-}
-.padding-xxl {
-  padding: $space-jumbo;
-}
-.padding-xxxl {
-  padding: $space-mega;
-}
+$space-postfix-list: nil xxs xs s xxm xm m l xl xxl xxxl;
+$space-list: $zero $space-micro $space-smaller $space-small $space-slab $space-normal $space-medium $space-large $space-larger $space-jumbo $space-mega;
+
+@for $i from 1 through length($space-postfix-list){
+
+  $current-postfix: nth($space-postfix-list, $i);
+  $current-size: nth($space-list, $i);
+
+  // Current variabes for tablets and phone
+  $current-size--tablet: $current-size/1.5;
+  $current-size--phone: $current-size/2;
 
 
-// vertical padding
-.padding-v-nil {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.padding-v-xxs {
-  padding-top: $space-micro;
-  padding-bottom: $space-micro;
-}
-.padding-v-xs {
-  padding-top: $space-smaller;
-  padding-bottom: $space-smaller;
-}
-.padding-v-s {
-  padding-top: $space-small;
-  padding-bottom: $space-small;
-}
-.padding-v-xxm {
-  padding-top: $space-slab;
-  padding-bottom: $space-slab;
-}
-.padding-v-xm {
-  padding-top: $space-normal;
-  padding-bottom: $space-normal;
-}
-.padding-v-m {
-  padding-top: $space-medium;
-  padding-bottom: $space-medium;
-}
-.padding-v-l {
-  padding-top: $space-large;
-  padding-bottom: $space-large;
-}
-.padding-v-xl {
-  padding-top: $space-larger;
-  padding-bottom: $space-larger;
-}
-.padding-v-xxl {
-  padding-top: $space-jumbo;
-  padding-bottom: $space-jumbo;
-}
-.padding-v-xxxl {
-  padding-top: $space-mega;
-  padding-bottom: $space-mega;
-}
+  // padding
+  .padding-#{$current-postfix} {
+    padding: $current-size;
+
+    @include media-tablet {
+      padding: $current-size--tablet;
+    }
+    @include media-phone {
+      padding: $current-size--phone;
+    }
+  }
+  // vertical padding
+  .padding-v-#{$current-postfix} {
+    @include padding($current-size null $current-size null);
+
+    @include media-tablet {
+      @include padding($current-size--tablet null $current-size--tablet null);
+    }
+    @include media-phone {
+      @include padding($current-size--phone null $current-size--phone null);
+    }
+  }
+  // horizonal padding
+  .padding-h-#{$current-postfix} {
+    @include padding(null $current-size null $current-size);
+
+    @include media-tablet {
+      @include padding(null $current-size--tablet null $current-size--tablet);
+    }
+    @include media-phone {
+      @include padding(null $current-size--phone null $current-size--phone);
+    }
+  }
+  // Padding left
+  .padding-left-#{$current-postfix} {
+    padding-left: $current-size;
+
+    @include media-tablet {
+      padding-left: $current-size--tablet;
+    }
+    @include media-phone {
+      padding-left: $current-size--phone;
+    }
+  }
+  // Padding top
+  .padding-top-#{$current-postfix} {
+    padding-top: $current-size;
+
+    @include media-tablet {
+      padding-top: $current-size--tablet;
+    }
+    @include media-phone {
+      padding-top: $current-size--phone;
+    }
+  }
+  // Padding right
+  .padding-right-#{$current-postfix} {
+    padding-right: $current-size;
+
+    @include media-tablet {
+      padding-right: $current-size--tablet;
+    }
+    @include media-phone {
+      padding-right: $current-size--phone;
+    }
+  }
+  // Padding bottom
+  .padding-bottom-#{$current-postfix} {
+    padding-bottom: $current-size;
+
+    @include media-tablet {
+      padding-bottom: $current-size--tablet;
+    }
+    @include media-phone {
+      padding-bottom: $current-size--phone;
+    }
+  }
 
 
-// horizonal padding
-.padding-h-nil {
-  padding-left: 0;
-  padding-right: 0;
-}
-.padding-h-xxs {
-  padding-left: $space-micro;
-  padding-right: $space-micro;
-}
-.padding-h-xs {
-  padding-left: $space-smaller;
-  padding-right: $space-smaller;
-}
-.padding-h-s {
-  padding-left: $space-small;
-  padding-right: $space-small;
-}
-.padding-h-xxm {
-  padding-left: $space-slab;
-  padding-right: $space-slab;
-}
-.padding-h-xm {
-  padding-left: $space-normal;
-  padding-right: $space-normal;
-}
-.padding-h-m {
-  padding-left: $space-medium;
-  padding-right: $space-medium;
-}
-.padding-h-l {
-  padding-left: $space-large;
-  padding-right: $space-large;
-}
-.padding-h-xl {
-  padding-left: $space-larger;
-  padding-right: $space-larger;
-}
-.padding-h-xxl {
-  padding-left: $space-jumbo;
-  padding-right: $space-jumbo;
-}
-.padding-h-xxxl {
-  padding-left: $space-mega;
-  padding-right: $space-mega;
-}
+  // ******************************
+  // *******    Margins     *******
+  // ******************************
+  .margin-#{$current-postfix} {
+    margin: $current-size;
 
+    @include media-tablet {
+      margin: $current-size--tablet;
+    }
+    @include media-phone {
+      margin: $current-size--phone;
+    }
+  }
+  // vertical margin
+  .margin-v-#{$current-postfix} {
+    @include margin($current-size null $current-size null);
 
-// Padding left
+    @include media-tablet {
+      @include margin($current-size--tablet null $current-size--tablet null);
+    }
+    @include media-phone {
+      @include margin($current-size--phone null $current-size--phone null);
+    }
+  }
+  // horizonal margin
+  .margin-h-#{$current-postfix} {
+    @include margin(null $current-size null $current-size);
 
-.padding-left-nil {
-  padding-left: 0;
-}
-.padding-left-xxs {
-  padding-left: $space-micro;
-}
-.padding-left-xs {
-  padding-left: $space-smaller;
-}
-.padding-left-s {
-  padding-left: $space-small;
-}
-.padding-left-xxm {
-  padding-left: $space-slab;
-}
-.padding-left-xm {
-  padding-left: $space-normal;
-}
-.padding-left-m {
-  padding-left: $space-medium;
-}
-.padding-left-l {
-  padding-left: $space-large;
-}
-.padding-left-xl {
-  padding-left: $space-larger;
-}
-.padding-left-xxl {
-  padding-left: $space-jumbo;
-}
-.padding-left-xxxl {
-  padding-left: $space-mega;
-}
+    @include media-tablet {
+      @include margin(null $current-size--tablet null $current-size--tablet);
+    }
+    @include media-phone {
+      @include margin(null $current-size--phone null $current-size--phone);
+    }
+  }
+  // margin left
+  .margin-left-#{$current-postfix} {
+    margin-left: $current-size;
 
-// top padding
-.padding-top-nil {
-  padding-top: 0;
-}
-.padding-top-xxs {
-  padding-top: $space-micro;
-}
-.padding-top-xs {
-  padding-top: $space-smaller;
-}
-.padding-top-s {
-  padding-top: $space-small;
-}
-.padding-top-xxm {
-  padding-top: $space-slab;
-}
-.padding-top-xm {
-  padding-top: $space-normal;
-}
-.padding-top-m {
-  padding-top: $space-medium;
-}
-.padding-top-l {
-  padding-top: $space-large;
-}
-.padding-top-xl {
-  padding-top: $space-larger;
-}
-.padding-top-xxl {
-  padding-top: $space-jumbo;
-}
-.padding-top-xxxl {
-  padding-top: $space-mega;
-}
+    @include media-tablet {
+      margin-left: $current-size--tablet;
+    }
+    @include media-phone {
+      margin-left: $current-size--phone;
+    }
+  }
+  // margin top
+  .margin-top-#{$current-postfix} {
+    margin-top: $current-size;
 
-// Padding right
+    @include media-tablet {
+      margin-top: $current-size--tablet;
+    }
+    @include media-phone {
+      margin-top: $current-size--phone;
+    }
+  }
+  // margin right
+  .margin-right-#{$current-postfix} {
+    margin-right: $current-size;
 
-.padding-right-nil {
-  padding-right: 0;
-}
-.padding-right-xxs {
-  padding-right: $space-micro;
-}
-.padding-right-xs {
-  padding-right: $space-smaller;
-}
-.padding-right-s {
-  padding-right: $space-small;
-}
-.padding-right-xxm {
-  padding-right: $space-slab;
-}
-.padding-right-xm {
-  padding-right: $space-normal;
-}
-.padding-right-m {
-  padding-right: $space-medium;
-}
-.padding-right-l {
-  padding-right: $space-large;
-}
-.padding-right-xl {
-  padding-right: $space-larger;
-}
-.padding-right-xxl {
-  padding-right: $space-jumbo;
-}
-.padding-right-xxxl {
-  padding-right: $space-mega;
-}
+    @include media-tablet {
+      margin-right: $current-size--tablet;
+    }
+    @include media-phone {
+      margin-right: $current-size--phone;
+    }
+  }
+  // margin bottom
+  .margin-bottom-#{$current-postfix} {
+    margin-bottom: $current-size;
 
-// bottom padding
-.padding-bottom-nil {
-  padding-bottom: 0;
-}
-.padding-bottom-xxs {
-  padding-bottom: $space-micro;
-}
-.padding-bottom-xs {
-  padding-bottom: $space-smaller;
-}
-.padding-bottom-s {
-  padding-bottom: $space-small;
-}
-.padding-bottom-xxm {
-  padding-bottom: $space-slab;
-}
-.padding-bottom-xm {
-  padding-bottom: $space-normal;
-}
-.padding-bottom-m {
-  padding-bottom: $space-medium;
-}
-.padding-bottom-l {
-  padding-bottom: $space-large;
-}
-.padding-bottom-xl {
-  padding-bottom: $space-larger;
-}
-.padding-bottom-xxl {
-  padding-bottom: $space-jumbo;
-}
-.padding-bottom-xxxl {
-  padding-bottom: $space-mega;
-}
-
-// ******************************
-// *******    margins     *******
-// ******************************
-.margin-nil {
-  margin: 0;
-}
-.margin-xxs {
-  margin: $space-micro;
-}
-.margin-xs {
-  margin: $space-smaller;
-}
-.margin-s {
-  margin: $space-small;
-}
-.margin-xxm {
-  margin: $space-slab;
-}
-.margin-xm {
-  margin: $space-normal;
-}
-.margin-m {
-  margin: $space-medium;
-}
-.margin-l {
-  margin: $space-large;
-}
-.margin-xl {
-  margin: $space-larger;
-}
-.margin-xxl {
-  margin: $space-jumbo;
-}
-.margin-xxxl {
-  margin: $space-mega;
-}
-
-// vertical margin
-.margin-v-nil {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.margin-v-xxs {
-  margin-top: $space-micro;
-  margin-bottom: $space-micro;
-}
-.margin-v-xs {
-  margin-top: $space-smaller;
-  margin-bottom: $space-smaller;
-}
-.margin-v-s {
-  margin-top: $space-small;
-  margin-bottom: $space-small;
-}
-.margin-v-xxm {
-  margin-top: $space-slab;
-  margin-bottom: $space-slab;
-}
-.margin-v-xm {
-  margin-top: $space-normal;
-  margin-bottom: $space-normal;
-}
-.margin-v-m {
-  margin-top: $space-medium;
-  margin-bottom: $space-medium;
-}
-.margin-v-l {
-  margin-top: $space-large;
-  margin-bottom: $space-large;
-}
-.margin-v-xl {
-  margin-top: $space-larger;
-  margin-bottom: $space-larger;
-}
-.margin-v-xxl {
-  margin-top: $space-jumbo;
-  margin-bottom: $space-jumbo;
-}
-.margin-v-xxxl {
-  margin-top: $space-mega;
-  margin-bottom: $space-mega;
-}
-
-
-// horizonal margin
-.margin-h-nil {
-  margin-left: 0;
-  margin-right: 0;
-}
-.margin-h-xxs {
-  margin-left: $space-micro;
-  margin-right: $space-micro;
-}
-.margin-h-xs {
-  margin-left: $space-smaller;
-  margin-right: $space-smaller;
-}
-.margin-h-s {
-  margin-left: $space-small;
-  margin-right: $space-small;
-}
-.margin-h-xxm {
-  margin-left: $space-slab;
-  margin-right: $space-slab;
-}
-.margin-h-xm {
-  margin-left: $space-normal;
-  margin-right: $space-normal;
-}
-.margin-h-m {
-  margin-left: $space-medium;
-  margin-right: $space-medium;
-}
-.margin-h-l {
-  margin-left: $space-large;
-  margin-right: $space-large;
-}
-.margin-h-xl {
-  margin-left: $space-larger;
-  margin-right: $space-larger;
-}
-.margin-h-xxl {
-  margin-top: $space-jumbo;
-  margin-bottom: $space-jumbo;
-}
-.margin-h-xxxl {
-  margin-top: $space-mega;
-  margin-bottom: $space-mega;
-}
-
-// Margin left
-
-.margin-left-nil {
-  margin-left: 0;
-}
-.margin-left-xxs {
-  margin-left: $space-micro;
-}
-.margin-left-xs {
-  margin-left: $space-smaller;
-}
-.margin-left-s {
-  margin-left: $space-small;
-}
-.margin-left-xxm {
-  margin-left: $space-slab;
-}
-.margin-left-xm {
-  margin-left: $space-normal;
-}
-.margin-left-m {
-  margin-left: $space-medium;
-}
-.margin-left-l {
-  margin-left: $space-large;
-}
-.margin-left-xl {
-  margin-left: $space-larger;
-}
-.margin-left-xxl {
-  margin-left: $space-jumbo;
-}
-.margin-left-xxxl {
-  margin-left: $space-mega;
-}
-
-// top margin
-.margin-top-nil {
-  margin-top: 0;
-}
-.margin-top-xxs {
-  margin-top: $space-micro;
-}
-.margin-top-xs {
-  margin-top: $space-smaller;
-}
-.margin-top-s {
-  margin-top: $space-small;
-}
-.margin-top-xxm {
-  margin-top: $space-slab;
-}
-.margin-top-xm {
-  margin-top: $space-normal;
-}
-.margin-top-m {
-  margin-top: $space-medium;
-}
-.margin-top-l {
-  margin-top: $space-large;
-}
-.margin-top-xl {
-  margin-top: $space-larger;
-}
-.margin-top-xxl {
-  margin-top: $space-jumbo;
-}
-.margin-top-xxxl {
-  margin-top: $space-mega;
-}
-
-// margin right
-
-.margin-right-nil {
-  margin-right: 0;
-}
-.margin-right-xxs {
-  margin-right: $space-micro;
-}
-.margin-right-xs {
-  margin-right: $space-smaller;
-}
-.margin-right-s {
-  margin-right: $space-small;
-}
-.margin-right-xxm {
-  margin-right: $space-slab;
-}
-.margin-right-xm {
-  margin-right: $space-normal;
-}
-.margin-right-m {
-  margin-right: $space-medium;
-}
-.margin-right-xxm {
-  margin-right: $space-slab;
-}
-.margin-right-l {
-  margin-right: $space-large;
-}
-.margin-right-xl {
-  margin-right: $space-larger;
-}
-.margin-right-xxl {
-  margin-right: $space-jumbo;
-}
-.margin-right-xxxl {
-  margin-right: $space-mega;
-}
-
-// bottom margin
-.margin-bottom-nil {
-  margin-bottom: 0;
-}
-.margin-bottom-xxs {
-  margin-bottom: $space-micro;
-}
-.margin-bottom-xs {
-  margin-bottom: $space-smaller;
-}
-.margin-bottom-s {
-  margin-bottom: $space-small;
-}
-.margin-bottom-xxm {
-  margin-bottom: $space-slab;
-}
-.margin-bottom-xm {
-  margin-bottom: $space-normal;
-}
-.margin-bottom-m {
-  margin-bottom: $space-medium;
-}
-.margin-bottom-l {
-  margin-bottom: $space-large;
-}
-.margin-bottom-xl {
-  margin-bottom: $space-larger;
-}
-.margin-bottom-xxl {
-  margin-bottom: $space-jumbo;
-}
-.margin-bottom-xxxl {
-  margin-bottom: $space-mega;
+    @include media-tablet {
+      margin-bottom: $current-size--tablet;
+    }
+    @include media-phone {
+      margin-bottom: $current-size--phone;
+    }
+  }
 }

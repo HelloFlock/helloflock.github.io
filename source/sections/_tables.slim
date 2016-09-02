@@ -2,7 +2,6 @@ section#flock-tables.block-tables.margin-top-xxxl
   h2.sub-header Tables
   p A living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times. Add some documentation here on how to get started with your new style guide and start customizing this boilerplate to your liking
   h4.sub-header.margin-top-l Minimal Table
-  p These colors are used to refelct Flock's Brand identity
 
   table
     thead
@@ -29,9 +28,11 @@ section#flock-tables.block-tables.margin-top-xxxl
         td @twitter
 
   h4.sub-header.margin-top-l Elegent Table
-  p These colors are used to refelct Flock's Brand identity
+  p
+    code .table--elegent
+    | class to add colored headers for a table
 
-  table.--elegent
+  table.table--elegent
     thead
       tr
         th #
@@ -56,9 +57,40 @@ section#flock-tables.block-tables.margin-top-xxxl
         td @twitter
 
   h4.sub-header.margin-top-l Border Table
-  p These colors are used to refelct Flock's Brand identity
+  p
+    code .table--border
+    | class to add border for a table
 
-  table.--border
+  table.table--border
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th scope="row"  1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th scope="row"  2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th scope="row"  3
+        td Larry
+        td the Bird
+        td @twitter
+
+  h4.sub-header.margin-top-l Striped Table
+  p
+    code .table--stripe
+    | class to add stripes to alternate rows
+
+  table.table--stripe
     thead
       tr
         th #
