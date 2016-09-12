@@ -14,6 +14,14 @@ after_configuration do
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+activate :directory_indexes
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+  deploy.branch = "master"
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -80,6 +88,17 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'beta.helloflock.com'
+  s3_sync.prefix                     = 'design'
+  s3_sync.region                     = 'us-west-2'
+  s3_sync.after_build                = false
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.version_bucket             = true
 end
 
 # Development-specific configuration

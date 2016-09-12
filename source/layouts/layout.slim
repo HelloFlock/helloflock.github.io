@@ -6,8 +6,8 @@ html
     meta content="width=device-width, initial-scale=0.9" name="viewport"
     title = "#{current_page.data.title} - Flock Styleguide"
     = favicon_tag 'images/favicon.ico'
-    = stylesheet_link_tag 'main'
-    = javascript_include_tag 'all'
+    = stylesheet_link_tag './main'
+    = javascript_include_tag './all'
 
   body(class="#{page_classes}")
     = yield
