@@ -1,0 +1,105 @@
+doctype html
+html[lang=""]
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    link[rel="link" href="index.html"]
+    link[rel="link" href="components.html"]
+    link[rel="link" href="button.html"]
+    link[rel="stylesheet" href="./css/typography.css"]
+    link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
+    link[href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"]
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
+    script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
+    script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
+  body.bg-light
+    .container
+      h2.mt-3
+        a[href="index.html"]
+          | Flock Design System
+      .row
+        .col-sm-3.mt-5
+          ul.nav.flex-column.py-0
+            li.nav-item
+              a.nav-link[href="components.html"]
+                strong
+                  | Components
+            li.nav-item
+              a.nav-link[href="button.html"]
+                | Button
+            li.nav-item
+              a.nav-link[href="alerts.html"]
+                | Alerts
+            li.nav-item
+              a.nav-link[href="#"]
+                | Feedback
+            li.nav-item
+              a.nav-link[href="#"]
+                | Form
+            li.nav-item
+              a.nav-link[href="#"]
+                | List
+            li.nav-item
+              a.nav-link[href="#"]
+                | Tables
+        .container.col-sm-9.bg-white.mt-5
+          h3.mb-5
+            | Alerts
+          .container
+            .bg-light.px-5.py-5
+              .shadow.p-4
+                .alert.alert-info.d-flex[role="alert"]
+                  i.material-icons
+                    | check_circle_outline
+                  |   Succsess 
+                  a.alert-link[href="#"]
+                  | . 
+                .alert.alert-warning.d-flex[role="alert"]
+                  i.material-icons
+                    | error
+                  |   Danger alert 
+                  a.alert-link[href="#"]
+                  | . 
+                .alert.alert-danger.d-flex[role="alert"]
+                  i.material-icons
+                    | error
+                  |   Danger alert 
+                  a.alert-link[href="#"]
+                  | . 
+                .alert.alert-info.d-flex.align-items-center.justify-content-between.p-2[role="alert"]
+                  |  Alert with button 
+                  a.alert-link[href="#"]
+                  button.btn.btn-primary.btn-sm[type="submit"]
+                    | Try it now 
+                .alert.alert-secondary[role="alert"]
+                  .form-check
+                    input#check1.form-check-input[type="checkbox" name="option1" value="something"]
+                    |   Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    a.alert-link[href="#"]
+                    | . 
+              small
+                | Alert with actions
+              .shadow.p-4.mt-5
+                .alert.alert-info.alert-dismissible
+                  a.close[href="#" data-dismiss="alert" aria-label="close"]
+                    | ×
+                  strong
+                    | Info!
+                  |  This alert box is dismissible. 
+              small
+                | Dismissible Alerts
+              .shadow.p-4.mt-5
+                .alert.alert-danger.d-flex[role="alert"]
+                  i.material-icons
+                    | error
+                  |  Lorem Ipsum is simply dummy text of the  
+                  a.alert-link[href="#"]
+                    | printing.
+                .Alertwarning.alert.alert-warning.d-flex[role="alert"]
+                  i.material-icons
+                    | error
+                  |  Lorem Ipsum is simply dummy text of the printing and  
+                  a.alert-link[href="#"]
+                    | typesetting.
+              small
+                | System Alerts
