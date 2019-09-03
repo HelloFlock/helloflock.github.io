@@ -1,0 +1,132 @@
+
+ a:visited 
+ {
+    text-align :center;
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+ }
+  a:active ,a:link, a:hover 
+{
+  color:blue;
+}
+  
+  
+   
+
+.blue{
+    width: 80%;
+    height: 8px;
+    padding: 0px;
+    background: #F1F0FF;
+    margin:10px;
+}
+
+.blue-box{
+    width: 8px;
+    height: 8px;
+    margin-top: 2%;
+    background-color:blue;
+}
+
+.blue-text{
+    margin: 60px;
+    color:black;
+    font-size: 12px;
+    line-height:1px;  
+}
+
+.red{
+width: 80%;
+height: 16px;
+padding: 0px;
+background: #FBEAE7;
+margin: 10px;
+}
+
+.red-box{
+width: 16px;
+height: 16px;
+margin-top: 2%;
+background-color:#A1060f;
+}
+
+.red-text{
+margin: 60px;
+color:black;
+font-size: 12px;
+}
+
+
+
+
+.green{
+width: 80%;
+height: 20px;
+padding: 0px;
+background: #E8F7EF ;
+margin: 10px;
+}
+    
+.green-box{
+width: 20px;
+height: 20px;
+background-color: green;
+}
+
+.green-text{
+margin: 60px;
+color:black;
+padding:1px;
+font-size: 12px;
+}
+
+
+
+
+.skyblue{
+width: 80%;
+height: 40px;
+padding: 0px;
+background:#EFF9FE;
+margin: 10px;
+}
+
+.skyblue-box{
+width: 40px;
+height: 40px;
+position: relative;
+background-color: skyblue;
+
+ }
+     
+.skyblue-text{
+ margin: 60px;
+color:black;
+padding:12px;
+font-size: 12px;
+}
+
+.pink{
+    width: 80%;
+    height: 60px;
+    padding: 0px;
+    background:#FCEBDB;
+    margin: 10px;
+    }
+    
+    .pink-box{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-color: pink;
+    
+     }
+         
+    .pink-text{
+    padding: 21px;
+     margin: 60px;
+    color:black;
+    font-size: 12px;
+    }
+
