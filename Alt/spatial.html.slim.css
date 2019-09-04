@@ -12,7 +12,7 @@ html[lang=""]
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
     script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
     script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
-  body.bg-light
+  body
     .container
       h2.mt-3
         a[href="index.html"]
@@ -39,10 +39,10 @@ html[lang=""]
           li.nav-item.active.border-bottom.border-dark[role="presentation"]
             a.nav-link[href="spatial.html"]
               | Spatial Units
-        .container.col-sm-9.bg-white.mt-5
-          h4.mb-5
+        .container.col-sm-9.bg-light.p-5
+          h2
             | Spatial Units
-          .shadow.px-5.py-2
+          .bg-white.px-5.py-4.mt-3
             .blue
               .blue-box
                 p.blue-text
@@ -56,14 +56,17 @@ html[lang=""]
             .green
               .green-box
                 p.green-text
-                  | M/20PX
+                  small
+                    | M/20PX
             .skyblue
               .skyblue-box
                 p.skyblue-text
-                  | XL/60PX
+                  small
+                    | XL/60PX
             .pink
               .pink-box
                 p.pink-text
-                  | XL/60PX
-          p
+                  small
+                    | XL/60PX
+          p.mx-1
             | Base Spantial Units
