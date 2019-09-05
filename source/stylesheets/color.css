@@ -1,0 +1,19 @@
+.box {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+}
+
+a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+a:active,
+a:link,
+a:hover {
+  color: blue;
+}
