@@ -3,44 +3,24 @@ html[lang=""]
   head
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    link[rel="stylesheet" href="./css/typography.css"]
+    link[rel="stylesheet" href="./stylesheets/typography.css"]
     link[rel="link" href="index.html"]
     link[rel="link" href="foundation.html"]
     link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
     script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
     script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
-  body.bg-light
-    .container
-      h2.mt-3
-        a[href="index.html"]
-          | Flock Design System
-      .row
-        .col-sm-3.mt-5
-          ul.nav.flex-column.py-0
-            li.nav-item
-              a.nav-link[role="presentation" href="#"]
-                strong
-                  | Foundations
-            li.nav-item
-              a.nav-link[role="presentation" href="color.html"]
-                | Color
-            |  <li class="nav-item active border-bottom border-dark role="presentation"> 
-          a.nav-link[href="typography.html"]
+  body
+  = partial 'partials/header'
+.container-fluid.flock-main-content
+  .row
+    = partial 'partials/sidebar'
+    .col-sm-9.main.p-0
+
+        .p-5[style="background-color: #f5f5f5"]
+          h2.mx-3
             | Typography
-          li.nav-item[role="presentation"]
-            a.nav-link[href="avatar.html"]
-              | Avtars
-          li.nav-item[role="presentation"]
-            a.nav-link[href="#"]
-              | Data visualisation(TDB)
-          li.nav-item[role="presentation"]
-            a.nav-link[href="spatial.html"]
-              | Spatial Units
-        .col-sm-9.bg-white.mt-5
-          h2.mx-3.mt-5.mb-3
-            | Typography
-          table.table.shadow.col-md-11.mx-4
+          table.table.bg-white.col-md-11.mx-4
             thead
               tr
                 th[scope="col"]
@@ -59,11 +39,11 @@ html[lang=""]
             tbody
               tr
                 th[scope="row"]
-                  h4
+                  h5
                     b
                       | Workflow Title
                 td.text-secondary
-                  h4
+                  h5
                     b
                       | Subdued
                 td
@@ -82,7 +62,6 @@ html[lang=""]
                     | Workflow Heading 
                 td.text-secondary
                   h5
-                  h5
                     | Subdued
                 td
                   small
@@ -93,12 +72,14 @@ html[lang=""]
                 td
                   small
                     strong
-                      | Franca medium
+                      | Franca Medium
               tr
-                td[scope="row"]
-                  | Page Title
+                th[scope="row"]
+                  b
+                    | Page Title
                 td.text-secondary
-                  | Subdued
+                  b
+                    | Subdued
                 td
                   small
                     | 18px/28px
@@ -107,7 +88,8 @@ html[lang=""]
                     | 0px
                 td
                   small
-                    | Franca Book
+                    b
+                      | Franca Semibold
               tr
                 th[scope="row"]
                   | Heading One
@@ -131,7 +113,7 @@ html[lang=""]
                 td.text-secondary
                   small
                     b
-                      | SUBDUED
+                      | Subdued
                 td
                   small
                     | 14px/20px
@@ -146,11 +128,15 @@ html[lang=""]
                 th[scope="row"]
                   h6
                     small
-                      | BODY
+                      | Body
                 td.text-secondary
-                  h6
+                  small
+                    | Subdued
+                  small
+                    | Disabled
+                  span.badge.badge-secondary
                     small
-                      | SUBDUED
+                      | Reversed
                 td
                   small
                     | 14px/20px
@@ -161,7 +147,7 @@ html[lang=""]
                   small
                     | Franca Book
               tr
-                th[scope="row"]
+                th
                   small
                     | Caption
                 td.text-secondary
@@ -180,7 +166,7 @@ html[lang=""]
                 th
                   p
                     small
-                      | ▉ Ink ▢ Subdued
+                      | █ Ink ▢ Subdued
                 td
                 td
                 td
@@ -206,7 +192,7 @@ html[lang=""]
             .col-sm-5.mt-5
               h1
                 | Font Stack
-              table.table.shadow.mt-5
+              table.table.bg-white.mt-5
                 thead
                   tr
                     th[scope="col"]
@@ -263,7 +249,7 @@ html[lang=""]
                 | font-family: -apple-system, BlinkMacSystemFont, Franca-Book, 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', ‘Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
           h1.mt-5.mx-4
             | Capitalization
-          .px-3.shadow.mt-2.mb-5.mx-4
+          .px-3.bg-white.mt-2.mb-5.mx-4
             .row.pt-4.pb-2
               .col-md-6
                 button.btn.btn-primary[type="button"]
@@ -289,8 +275,10 @@ html[lang=""]
                   b
                     | Sentence Case
             hr
-            img.avatar.mb-3[src="img/111.jpg" alt="Avatar"]
-            .float-right
+            img.avatar.align-items-center.mb-3.mt-3[src="../images/111.jpg" alt="Avatar"]
+            span.ml-2.mt-1
+              | Gabie sheber
+            .float-right.mt-3
               small.align-items-center
                 | All proper noun will be in
                 b

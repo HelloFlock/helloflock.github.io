@@ -3,43 +3,24 @@ html[lang=""]
   head
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    link[rel="stylesheet" href="./css/spatial.css"]
+    link[rel="stylesheet" href="./stylesheets/spatial.css"]
     link[rel="link" href="index.html"]
     link[rel="link" href="color.html"]
     link[rel="link" href="foundation.html"]
-    link[rel="link" href="typography.html"]
+    link[rel="link" href="typography"]
     link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
     script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
     script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
   body
-    .container
-      h2.mt-3
-        a[href="index.html"]
-          | Flock Design System
-      .row
-        .col-sm-3.mt-5
-          ul.nav.flex-column.py-0
-            li.nav-item
-              a.nav-link[role="presentation" href="#"]
-                strong
-                  | Foundations
-            li.nav-item
-              a.nav-link[role="presentation" href="color.html"]
-                | Color
-            |  <li class="nav-item role="presentation"> 
-          a.nav-link[href="typography.html"]
-            | Typography
-          li.nav-item[role="presentation"]
-            a.nav-link[href="avatar.html"]
-              | Avtars
-          li.nav-item[role="presentation"]
-            a.nav-link[href="#"]
-              | Data visualisation(TDB)
-          li.nav-item.active.border-bottom.border-dark[role="presentation"]
-            a.nav-link[href="spatial.html"]
-              | Spatial Units
-        .container.col-sm-9.bg-light.p-5
+  = partial 'partials/header'
+.container-fluid.flock-main-content
+  .row
+    = partial 'partials/sidebar'
+    .col-sm-9.main.p-0
+   
+        
+        .p-5[style="background-color: #f5f5f5"]
           h2
             | Spatial Units
           .bg-white.px-5.py-4.mt-3

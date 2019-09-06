@@ -3,45 +3,30 @@ html[lang=""]
   head
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    link[rel="link" href="index.html"]
+    link[rel="link" href="foundation"]
+    link[rel="link" href="typography"]
     link[rel="stylesheet" href="./stylesheets/color.css"]
-    link[rel="link" href="foundation.html.slim"]
-    link[rel="link" href="/avatar.html.slim"]
+    link[rel="link" href="spatial"]
+    link[rel="link" href="avatar"]
     link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
     script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
     script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
-  body.bg-light
-    .container
-      h2.mt-3
-        a[href="index.html"]
-          | Flock Design System
+  body
+      = partial 'partials/header'
+.container-fluid.flock-main-content
+  .row
+    = partial 'partials/sidebar'
+    .col-sm-9.main
+
+     .container
+    
       .row
-        .col-sm-3.mt-5
-          ul.nav.flex-column.py-0.text-dark.text-decoration-none
-            li.nav-item
-              a.nav-link[role="presentation" href="#"]
-                strong
-                  | Foundations
-            li.nav-item.active.border-bottom.border-dark
-              a.nav-link[role="presentation" href="color.html"]
-                | Color
-            li.nav-item[role="presentation"]
-              a.nav-link[href="typography.html.slim"]
-                | Typography
-            li.nav-item[role="presentation"]
-              a.nav-link[href="avatar.html.slim"]
-                | Avtars
-            li.nav-item[role="presentation"]
-              a.nav-link[href="#"]
-                | Data visualisation(TDB)
-            li.nav-item[role="presentation"]
-              a.nav-link[href="spatial.html.slim"]
-                | Spatial Units
-        .bg-white.col-sm-9.mt-5
-          h2.mx-5.mt-5.mb-3
+
+        .p-5
+          h2.mx-5.mb-3
             | Primary Colors
-          .row.mx-4
+          .row.mx-4 
             .col-sm-6.mt-5
               .d-flex.align-items-center
                 span.box.border-light[style="background-color:#E7F3FC"]
@@ -291,7 +276,7 @@ html[lang=""]
                     | #181D25
           h2.mt-5.mx-5
             | How to use colors:
-          .px-2.py-2.mb-5.mr-5.ml-5.w-75[style="background-color:#EFF9FE"]
+          .px-2.py-2.mb-5.mx-5.w-75[style="background-color:#EFF9FE"]
             h5
               | How to use the colors in the pallete
             p

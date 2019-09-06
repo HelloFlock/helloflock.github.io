@@ -1,0 +1,116 @@
+
+ a:visited 
+ {
+    text-align :center;
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+ }
+  a:active ,a:link, a:hover 
+{
+  color:blue;
+}
+  
+  
+.blue{
+width: 650px;
+height: 8px;
+background: #E7F3FC;
+margin:10px;
+}
+
+.blue-box{
+width: 8px;
+height: 8px;
+margin-top: 2%;
+background-color:#0000ff;
+}
+
+.blue-text{
+margin: 0px 0px 40px 10px;
+line-height:1px;  
+}
+
+.red{
+width: 650px;
+height: 16px;
+background:#fdedeb ;
+margin: 10px;
+}
+
+.red-box{
+width: 16px;
+height: 16px;
+margin-top: 2%;
+background-color:#ff00ff;
+}
+
+.red-text{
+margin: 40px 0px 40px 15px;
+line-height: 2px;
+padding:5px;    
+}
+
+
+
+
+.green{
+width: 650px;
+height: 20px;
+background:#E3F4EB ;
+margin: 10px;
+}
+    
+.green-box{
+width: 20px;
+height: 20px;
+background-color: #0af167;
+}
+
+.green-text{
+margin: 40px 0px 40px 20px;
+line-height: 2px;
+padding:7px;
+}
+
+
+
+
+.skyblue{
+width: 650px;
+height: 40px;
+background:#EFF9FE;
+margin: 10px;
+}
+
+.skyblue-box{
+width: 40px;
+height: 40px;
+background-color: #00ffff;
+
+ }
+     
+.skyblue-text{
+ margin: 40px 0px 40px 40px;
+padding:7px;
+}
+
+.pink{
+width: 650px;
+height: 60px;
+background:#FDEDEB;
+margin: 10px;
+}
+    
+.pink-box{
+width: 60px;
+height: 60px;
+background-color:#ff0000;
+
+ }
+     
+.pink-text{
+padding: 17px;
+margin: 40px 0px 40px 50px;
+}
+
