@@ -3,7 +3,7 @@ html[lang=""]
   head
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
-    link[rel="stylesheet" href="./css/avatar.css"]
+    link[rel="stylesheet" href="./stylesheets/avatar.css"]
     link[rel="link" href="index.html"]
     link[rel="link" href="color.html"]
     link[rel="link" href="foundation.html"]
@@ -12,14 +12,15 @@ html[lang=""]
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
     script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
     script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
-  body[cass="bg-light"]
-    .container
-      
-      .row
-        
-          
-        .container.col-sm-9.bg-light.mt-5
-          h2.mx-5.mt-5.mb-3
+  body
+     = partial 'partials/header'
+.container-fluid.flock-main-content
+  .row
+    = partial 'partials/sidebar'
+    .col-sm-9.main.p-0
+  
+        .p-3[style="background-color:#f5f5f5"]
+          h2.mx-5.my-5.mb-3
             | Avatars
           .row
             .col-md-5.ml-4
@@ -63,7 +64,7 @@ html[lang=""]
                 .avatar-circle-skyblue.text-center.p-1.mx-1
                   span.initials
                     | AM
-                .avatar-circle-brown.text-center.p-1.mx-
+                .avatar-circle-brown.text-center.p-1.mx-1
                   span.initials
                     | MD
                 .avatar-circle-green.text-center.p-1.mx-1
@@ -81,9 +82,21 @@ html[lang=""]
                 .avatar-circle-skyblue.text-center.p-1.mx-1
                   span.initials
                     | CS
-                .avatar-circle-brown.text-center.p-1.mx-
+                .avatar-circle-brown.text-center.p-1.mx-1
                   span.initials
                     | OD
+                .avatar-circle-brown.text-center.p-1.mx-1
+                  span.initials
+                    | vk
+                .avatar-circle-skyblue.text-center.p-1.mx-1
+                  span.initials
+                    | MD
+                .avatar-circle-green.text-center.p-1.mx-1
+                  span.initials
+                    | sp
+                .avatar-circle-yellow.text-center.p-1.mx-1
+                  span.initials
+                    | Gk
               .ml-3
                 small
                   b
@@ -131,7 +144,7 @@ html[lang=""]
                   b
                     | User Avtar
             .ml-5
-              img.w-25.mt-5.ml-2[src="./img/1.jpeg" alt="company logo"]
-              h5.mt-1.ml-2
-                b
+              img.w-50.mt-5.ml-2[src="./images/flock-logo.png" alt="company logo"]
+              .mt-1.ml-2
+                
                   | Company Logo
