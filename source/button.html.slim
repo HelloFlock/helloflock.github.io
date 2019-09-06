@@ -4,44 +4,20 @@ html[lang=""]
     meta[charset="utf-8"]
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     link[rel="link" href="index.html"]
-    link[rel="stylesheet" href="./css/typography.css"]
+    link[rel="stylesheet" href="./stylesheets/foundation.css"]
     link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
     link[href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"]
     script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
     script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
     script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
   body
-    .container
-      h2.mt-3
-        a[href="index.html"]
-          | Flock Design System
-      .row
-        .col-sm-3.mt-5
-          ul.nav.flex-column.py-0
-            li.nav-item
-              a.nav-link[href="components.html"]
-                strong
-                  | Components
-            li.nav-item.active.border-bottom.border-dark
-              a.nav-link[href="button.html"]
-                | Button
-            li.nav-item
-              a.nav-link[href="alerts.html"]
-                | Alerts
-            li.nav-item
-              a.nav-link[href="#"]
-                | Feedback
-            li.nav-item
-              a.nav-link[href="#"]
-                | Form
-            li.nav-item
-              a.nav-link[href="#"]
-                | List
-            li.nav-item
-              a.nav-link[href="#"]
-                | Tables
-        .container.col-sm-9.bg-light.mY-5
-          h3.my-5.mx-5
+   = partial 'partials/header'
+.container-fluid.flock-main-content
+  .row
+    = partial 'partials/sidebar2'
+    .col-sm-9.main.p-0
+        .p-5[style="background-color: #f5f5f5"]
+          h3.mx-5.my-5
             | Buttons
           .bg-white.p-3.mx-5
             .row
