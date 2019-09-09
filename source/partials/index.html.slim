@@ -1,0 +1,55 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    link[rel="stylesheet"]
+    link[href="foundation"]
+    link[href="components"]
+    link[href="messaging"]
+    link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
+    link[href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"]
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
+    script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
+    script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
+    style
+      |  .link:hover { background-color:#3040C4 !important; border-color:#3D82F0 !important; color:white !important; } 
+  body.bg-light[row="12"]
+    div[clas="container"]
+      .row
+        .col-md-5.position-relative
+          img.img-fluid.w-25.ml-5.mt-2[src="flock-logo copy.png" alt="image"]
+          .position-absolute[style="bottom:40px; left:61px"]
+            h1
+              strong
+                | Flock Design System
+            p.strong
+              | A styleguide for planning, designing, building, and implementing.
+        .col-md-7
+          img.img-fluid.mt-2[src="illustration-2.png" alt="image"]
+    .container.mt-5
+      .row.mx-md-n5
+        .col.px-sm-2
+          a.text-decoration-none.text-dark[href="foundation"]
+
+          .p-4.bg-white.link.shadow
+            p.d-flex.justify-content-center.mt-3
+              i.material-icons.align-items-center
+                | horizontal_split
+              | Foundation
+        .col.px-sm-2
+          a.text-decoration-none.text-dark[href="components"]
+
+          .p-4.bg-white.link.shadow
+            p.d-flex.justify-content-center.mt-3
+              i.material-icons
+                | menu
+              | Components
+        .col.px-sm-2
+          a.text-decoration-none.text-dark[href="messaging"]
+
+          .p-4.bg-white.link.shadow
+            p.d-flex.justify-content-center.mt-3
+              i.material-icons
+                | chat
+              | Messaging
