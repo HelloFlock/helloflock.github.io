@@ -1,24 +1,27 @@
-.col-md-3.bg-light
+  style
+    | a:hover{  color:#181D25 } .active a{  color:#181D25   } .activee { background-color:#E4E8EE  ; }
+  body.bg-light
+
+      .col-md-3.p-0.bg-light[style="min-height:100vh"]
           ul.nav.flex-column.py-0
-            li.nav-item
-              a.nav-link[href="components"]
-                strong
-                  | Components
-            li.nav-item
-              a.nav-link[href="button"]
+            li.nav-item class=(page == 'button' ? 'activee' : '')
+              a.nav-link.text-dark[href="button"]
                 | Button
-            li.nav-item
-              a.nav-link[href="alerts"]
+            li.nav-item class=(page == 'alerts' ? 'activee' : '')
+              a.nav-link.text-dark[href="alerts"]
                 | Alerts
-            li.nav-item
-              a.nav-link[href="#"]
-                | Feedback
-            li.nav-item
+            li.nav-item class=(page == 'avatar' ? 'activee' : '') 
+              a.nav-link.text-dark[href="avatar"]
+                | Avtars
+          /  li.nav-item class=(page == 'feedback' ? 'active' : '')
+          /    a.nav-link[href="#"]
+          /      | Feedback
+            li.nav-item class=(page == 'form' ? 'active' : '')
               a.nav-link[href="#"]
                 | Form
-            li.nav-item
+            li.nav-item class=(page == 'list' ? 'active' : '')
               a.nav-link[href="#"]
                 | List
-            li.nav-item
+            li.nav-item class=(page == 'tables' ? 'active' : '')
               a.nav-link[href="#"]
                 | Tables

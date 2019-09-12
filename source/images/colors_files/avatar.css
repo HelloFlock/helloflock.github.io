@@ -1,0 +1,208 @@
+a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+
+
+.initials{
+  vertical-align: middle;
+}
+
+
+.avatar-circle-red {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#006fbb ; 
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.avatar-circle-green {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#9c6ade ; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-yellow {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#47c1bf; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-pink{
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#f49342; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-blue{
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#50b83c ; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-skyblue {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#db3552 ; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-brown {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#ff4c4c ; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-white {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:#fbb034 ; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.avatar-circle-red {
+  display:inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:red ; 
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+
+.avatar-face-face1 {
+  background-image: url("../images/111.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+
+}  
+
+.avatar-face-face2 {
+  background-image: url("../images/112.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+
+} 
+
+.avatar-face-face3 {
+  background-image: url("../images/115.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+
+} 
+
+.avatar-face-face4 {
+  background-image: url("../images/116.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:32px;
+  height:32px;
+  border-radius:50%;
+
+}  
+
+.avatar-face-face5 {
+  background-image: url("../images/111.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.avatar-face-face6 {
+  background-image: url("../images/112.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.avatar-face-face7 {
+  background-image: url("../images/115.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.avatar-face-face8 {
+  background-image: url("../images/116.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.avatar-face-face9 {
+  background-image: url("../images/111.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:72px;
+  height:72px;
+  border-radius:50%;
+}
+
+.avatar-face-face10 {
+  background-image: url("../images/112.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:72px;
+  height:72px;
+  border-radius:50%;
+}
+
+.avatar-face-face11 {
+  background-image: url("../images/115.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:72px;
+  height:72px;
+  border-radius:50%;
+}
+
+.avatar-face-face12 {
+  background-image: url("../images/116.jpg");
+  background-size: contain;
+  display:inline-block;
+  width:72px;
+  height:72px;
+  border-radius:50%;
+}
+

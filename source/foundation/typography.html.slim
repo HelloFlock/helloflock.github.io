@@ -1,0 +1,273 @@
+= partial('partials/header', locals: {page: 'colors'})
+.container-fluid.flock-main-content
+  .row
+    = partial('partials/sidebar', locals: {page: 'typography'})
+    .col-sm-9.main.p-0
+
+      .p-5  [style="background-color: #f5f5f5"]
+        h2.mx-4.mb-5
+          | Typography
+
+        table.table.bg-white[style="width:820px; margin-left:20px"]
+          thead
+            tr
+              th[scope="col"]
+                small
+                  | TYPESTYLE
+              th[scope="col"]
+              th[scope="col"]
+                small
+                  | SIZE/LINE
+              th[scope="col"]
+                small
+                  | CHARACTER
+              th[scope="col"]
+                small
+                  | TYPEFACE
+          tbody
+            tr
+              th[scope="row"]
+                h5
+                  b
+                    | Workflow Title
+              td.text-secondary
+                h5
+                  b
+                    | Subdued
+              td
+                small
+                  | 24px/36px 
+              td
+                small
+                  | 0px
+              td
+                small
+                  b
+                    | Franca Bold
+            tr
+              th[scope="row"]
+                h5
+                  | Workflow Heading 
+              td.text-secondary
+                h5
+                  | Subdued
+              td
+                small
+                  | 22px/32px
+              td
+                small
+                  | 0px
+              td
+                small
+                  strong
+                    | Franca Medium
+            tr
+              th[scope="row"]
+                b
+                  | Page Title
+              td.text-secondary
+                b
+                  | Subdued
+              td
+                small
+                  | 18px/28px
+              td
+                small
+                  | 0px
+              td
+                small
+                  b
+                    | Franca Semibold
+            tr
+              th[scope="row"]
+                | Heading One
+              td.text-secondary
+                | Subdued
+              td
+                small
+                  | 16px/24px
+              td
+                small
+                  | 0px
+              td
+                small
+                  strong
+                    | Franca Semibold
+            tr
+              th[scope="row"]
+                small
+                  b
+                    | Subheading 
+              td.text-secondary
+                small
+                  b
+                    | Subdued
+              td
+                small
+                  | 14px/20px
+              td
+                small
+                  | 0px
+              td
+                small
+                  strong
+                    | Franca Semibold
+            tr
+              th[scope="row"]
+                h6
+                  small
+                    | Body
+              td.text-secondary
+                small
+                  | Subdued
+                small
+                  | Disabled
+                span.badge.badge-secondary
+                  small
+                    | Reversed
+              td
+                small
+                  | 14px/20px
+              td
+                small
+                  | 0px
+              td
+                small
+                  | Franca Book
+            tr
+              th
+                small
+                  | Caption
+              td.text-secondary
+                small
+                  | Subdued
+              td
+                small
+                  | 12px/16px
+              td
+                small
+                  | 0px 
+              td
+                small
+                  | Franca Book
+            tr
+              th
+                p
+                  small
+                    | █ Ink ▢ Subdued
+              td
+              td
+              td
+              td
+        .row.mx-2
+          .col-sm-7
+            h1.mt-5
+              | Examples
+            h3
+              | Module Heading
+            hr
+            h4
+              | Heading Two
+            p
+              | The transactions have gone into millions, but what we found to be even more imoressive was the average transaction value of Rs 1,700 and total transaction worth Rs 1.33 lakh crore in March this year.This is no mean feat,especially when you consider the fact that a year ago, in march 2018, the average trtansaction vakue was Rs 787 and the number of transaction were just around 3 lakh. 
+            p
+              | India is transacting digitally using several other methods using netbanking, UPI apps,and e-wallets. The ease of transactions is there thanks to the technological innovations that we are witnessing.
+            .bg-secondary.p-3.text-white
+              p
+                | The transactions have gone into millions, but what we found to be even more imoressive was the average transaction value of Rs 1,700 and total transaction worth Rs 1.33 lakh crore in March This year.
+            small
+              | Trasacting digitally using several other methods using netbanking
+          .col-sm-5.mt-5
+            h1
+              | Font Stack
+            table.table.bg-white.mt-5
+              thead
+                tr
+                  th[scope="col"]
+                    small
+                      b
+                        | OPERATING SYSTEM 
+                  th[scope="col"]
+                    small
+                      b
+                        | TYPEFACE 
+              tbody
+                tr
+                  td
+                    small
+                      | Mac(Browser)
+                  td
+                    small
+                      | Franca-Book
+                    p
+                      | helvetice Neue(Fallback)
+                tr
+                  td
+                    small
+                      | Windows(Browser)
+                  td
+                    small
+                      | Franca-Book
+                    p
+                      | segoe UI(Fallback)
+                tr
+                  td
+                    small
+                      | IOS
+                  td
+                    small
+                      | Franca-Book
+                    p
+                      | SF UI Text(Fallback)
+                    p
+                      | helvetice Neue(Fallback)
+                    | </td 
+                tr
+                  td
+                    small
+                      | Android
+                  td
+                    small
+                      | Franca-Book
+                    p
+                      | Roboto(Fallback)
+                    p
+                      | Noto Sans(Fallback)
+            small
+              | font-family: -apple-system, BlinkMacSystemFont, Franca-Book, 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', ‘Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        h1.mt-5.mx-4
+          | Capitalization
+        .px-3.bg-white.mt-2.mb-5.mx-4
+          .row.pt-4.pb-2
+            .col-md-6
+              button.btn.btn-primary[type="button"]
+                | Primary Action
+              button.btn.btn-link[type="button"]
+                | Plain Button
+            .col-md-6.text-right.mt-2
+              p.text-right.align-items-center
+                small
+                  | Buttons and CTA will be in 
+                  b
+                    | Title Case
+          hr
+          h3
+            | Benifits Report
+          hr
+          .row
+            .col-md-7
+              |  The transactions have gone into millions, but what we found to be even more imoressive was the average transaction value of Rs 1,700 and total trtansactionon worth Rs 1.33 lakh crore in March this year 
+            .col-md-5.text-right.align-items-center
+              small
+                | All contents will be in 
+                b
+                  | Sentence Case
+          hr
+          img.avatar.align-items-center.mb-3.mt-3[src="../images/111.jpg" alt="Avatar"]
+          span.ml-2.mt-1
+            | Gabie sheber
+          .float-right.mt-3
+            small.align-items-center
+              | All proper noun will be in
+              b
+                | Title Case

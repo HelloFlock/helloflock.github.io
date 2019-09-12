@@ -1,23 +1,29 @@
+  style
+    | a:hover{ color:#181D25 ;} .active a{ color:#181D25  } .activee { background-color:#E4E8EE  ; }
+  body.bg-light
+   
+      .col-sm-3.p-0
+        ul.nav.flex-column.py-0
+          li.nav-item class=(page == 'colors' ? 'activee' : '')  
+            a.nav-link.text-dark [role="presentation" href="colors"]
+              | Color
+          li.nav-item class=(page == 'typography' ? 'activee' : '')
+            a.nav-link.text-dark [href="typography"]
+              | Typography
+          
+      
+          li.nav-item class=(page == 'spatial' ? 'activee' : '')
+            a.nav-link.text-dark [href="spatial"]
+              | Spatial Units
 
-.col-md-3.bg-light
+        /  li.nav-item class=(page == 'tdb' ? 'active' : '')
+          a.nav-link.text-dark [href="#"]
+            | Data visualisation(TDB)
 
-  ul.nav.flex-column
-    li.nav-item
-      a.nav-link[role="presentation" href="foundation"]
-        strong
-          | Foundations
-    li.nav-item
-      a.nav-link[role="presentation" href="colors"]
-        | Color
-    li.nav-item[role="presentation"]
-      a.nav-link[href="typography"]
-        | Typography
-    li.nav-item[role="presentation"]
-      a.nav-link[href="avatar"]
-        | Avtars
-    li.nav-item[role="presentation"]
-      a.nav-link[href="#"]
-        | Data visualisation(TDB)
-    li.nav-item[role="presentation"]
-      a.nav-link[href="spatial"]
-        | Spatial Units
+            li.nav-item class=(page == 'avatar' ? 'active' : '') 
+            a.nav-link[href="avatar"]
+              | Avtars
+
+
+
+    

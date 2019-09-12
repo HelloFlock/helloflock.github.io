@@ -1,14 +1,8 @@
-
- a:visited 
- {
-    text-align :center;
-    text-decoration: none;
-    display: inline-block;
-    color:black;
- }
-  a:active ,a:link, a:hover 
-{
-  color:blue;
+a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ 
 }
   
   

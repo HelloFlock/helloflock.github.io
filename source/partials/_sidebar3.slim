@@ -1,0 +1,12 @@
+  style
+    | a:hover{  color:#181D25 ;} .active a{  color:#181D25!important   } .activee { background-color:#E4E8EE  ; }
+  body.bg-light
+
+      .col-md-3.p-0.bg-light[style="min-height:100vh"]
+          ul.nav.flex-column.py-0
+            li.nav-item class=(page == 'cta' ? 'activee' : '')
+              a.nav-link.text-dark [href="cta"]
+                | CTA Guidelines
+            li.nav-item class=(page == 'date' ? 'activee' : '')
+              a.nav-link.text-dark [href="date"]
+                | Date & Time Format

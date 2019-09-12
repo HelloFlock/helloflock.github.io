@@ -1,3 +1,9 @@
+a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ 
+}
 .box {
   display: inline-block;
   width: 70px;
@@ -5,12 +11,5 @@
   margin: 6px;
 }
 
-a:visited, a:link
- {
- 	display: inline-block;
-    text-decoration: none;
-    color:black;
-
- }
 
  
