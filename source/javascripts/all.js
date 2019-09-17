@@ -1,4 +1,13 @@
 //= require_tree .
-$(document).on('click','ul li',function(){
-    $(this).addClass('active').siblings().removeClass('active')
-  })
+ $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
+    function copyToClipboard(element) {
+      var $temp = $("<textarea>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+    }
+
