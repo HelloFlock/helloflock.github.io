@@ -19,7 +19,7 @@ activate :directory_indexes
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
-  deploy.branch = "master"
+  deploy.branch = "source"
 end
 
 ###
