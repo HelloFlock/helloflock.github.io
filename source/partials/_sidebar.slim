@@ -1,18 +1,29 @@
-.col-sm-3.col-md-2.sidebar
-      ul.nav.nav-sidebar
-        li.active
-          a href="#flock-intro"
-            | Intro
-            span.sr-only (current)
-        li
-          a href="#flock-colors"  colors
-        li
-          a href="#flock-typography"  typography
-        li
-          a href="#flock-buttons"  Buttons
-        li
-          a href="#flock-form"  Form
-        li
-          a href="#flock-tables"  Tables
-        li
-          a href="#flock-spaces"  Spaces
+  style
+    | a:hover{ color:#181D25 ;} .active a{ color:#181D25  } .activee { background-color:#E4E8EE  ; }
+  body.bg-light
+   
+      .col-sm-3.p-0
+        ul.nav.flex-column.py-0
+          li.nav-item class=(page == 'colors' ? 'activee' : '')  
+            a.nav-link.text-dark [role="presentation" href="colors"]
+              | Color
+          li.nav-item class=(page == 'typography' ? 'activee' : '')
+            a.nav-link.text-dark [href="typography"]
+              | Typography
+          
+      
+          li.nav-item class=(page == 'spatial' ? 'activee' : '')
+            a.nav-link.text-dark [href="spatial"]
+              | Spatial Units
+
+        /  li.nav-item class=(page == 'tdb' ? 'active' : '')
+          a.nav-link.text-dark [href="#"]
+            | Data visualisation(TDB)
+
+            li.nav-item class=(page == 'avatar' ? 'active' : '') 
+            a.nav-link[href="avatar"]
+              | Avtars
+
+
+
+    

@@ -1,0 +1,20 @@
+
+  .avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+a:visited {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            color: black;
+        }
+
+        a:active,
+        a:link,
+        a:hover {
+            color: blue;
+        }
+    

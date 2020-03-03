@@ -1,0 +1,38 @@
+= partial('partials/header', locals: {page: 'colors'})
+.container-fluid.flock-main-content
+  .row
+    = partial('partials/sidebar', locals: {page: 'spatial'})
+    .col-sm-9.main.p-0
+   
+        
+        .p-5[style="background-color: #f5f5f5"]
+          h2.mx-4.mb-5
+            | Spatial Units
+          .bg-white.px-5.py-4.mt-3.mx-4
+            .blue
+              .blue-box
+                p.blue-text
+                  small
+                    | XS/8PX
+            .red
+              .red-box
+                p.red-text
+                  small
+                    | S/16PX
+            .green
+              .green-box
+                p.green-text
+                  small
+                    | M/20PX
+            .skyblue
+              .skyblue-box
+                p.skyblue-text
+                  small
+                    | XL/60PX
+            .pink
+              .pink-box
+                p.pink-text
+                  small
+                    | XL/60PX
+          p.mx-4
+            | Base Spantial Units

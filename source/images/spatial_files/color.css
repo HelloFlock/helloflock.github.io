@@ -1,0 +1,16 @@
+.box {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+}
+
+a:visited, a:link
+ {
+ 	display: inline-block;
+    text-decoration: none;
+    color:black;
+
+ }
+
+ 

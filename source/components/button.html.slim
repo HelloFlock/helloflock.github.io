@@ -1,0 +1,104 @@
+= partial('partials/header', locals: {page: 'button'})
+.container-fluid.flock-main-content
+  .row
+    = partial('partials/sidebar2', locals: {page: 'button'})
+    .col-sm-9.main.p-0
+
+        .p-5[style="background-color: #f5f5f5"]
+          h2.mx-4.mb-5
+            | Buttons
+          .container
+          .bg-white.p-5.mx-3
+            .row
+              .col-sm-1.d-block.mt-3.mr-4.ml-5
+                button.btn.btn-primary.mb-3[type="submit"]
+                  | Primary
+                button.btn.btn-primary.mb-3[type="submit"]
+                  | Hover
+                button.btn.btn-primary.mb-3[type="submit"]
+                  | Active
+                button.btn.btn-primary.mb-3[type="submit" disabled]
+                  | Primary
+                .btn-group
+                  button.btn.btn-primary.border-right-0.border-dark[type="button"]
+                    | Split
+                  button.btn.btn-primary.dropdown-toggle.dropdown-toggle-split.border-dark[type="button" data-toggle="dropdown"]
+                    span.sr-only
+                      | Toggle Dropdown
+              .col-sm-1.d-block.mt-3.mb-3.ml-5.mr-4
+                button.btn.btn-light.mb-3[type="button"]
+                  | Default
+                button.btn.btn-light.mb-3[type="button"]
+                  | Hover
+                button.btn.btn-light.mb-3[type="button"]
+                  | Active
+                button.btn.btn-light.mb-3[type="button" disabled]
+                  | Default
+                .btn-group
+                  button.btn.btn-outline-secondary[type="button"]
+                    | Split
+                  button.btn.btn-outline-secondary.dropdown-toggle.dropdown-toggle-split[type="button" data-toggle="dropdown"]
+                    span.sr-only
+                      | Toggle Dropdown
+              .col-sm-1.mt-3.mb-3.d-block.mr-3.ml-5
+                button.btn.btn-danger.mb-3[type="submit"]
+                  | Distructive
+                button.btn.btn-danger.mb-3[type="submit"]
+                  | Hover
+                button.btn.btn-danger.mb-3[type="submit"]
+                  | Active
+                button.btn.btn-danger.mb-3[type="submit" disabled]
+                  | Disabled
+              .col-sm-4.mt-3.mb-3.d-block.ml-5
+                button.btn.btn-link[type="button"]
+                  | Plain-Button
+                button.btn.btn-link.mt-3.mb-5[type="button"]
+                  | Plain-Button-Hover
+                button.btn.btn-link.mt-4[type="button" disabled]
+                  | Plain-Button-Disabled
+          .bg-light.mx-3.position-relative
+                button.btn.btn-small.btn-light.m-3.position-absolute[type="button" onclick="copyToClipboard('#buttons')" style="top:5px; right:5px" data-toggle="tooltip" data-placement="top" title="Copy to clipboard"]
+                    | Copy
+                pre.pre-scrollable.p-5.text-dark   
+                  code#buttons
+                    | &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+
+                      &lt;button type="button" class="btn btn-primary disabled"&gt;Primary&lt;/button&gt;
+
+                      &lt;div class="btn-group"&gt;
+                        &lt;a class="btn btn-primary"&gt;Split&lt;/a&gt;
+                          &lt;button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split pl-2 text-center pr-3 border-right-0 border-top-0 border-bottom-0" data-toggle="dropdown"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;button type="button" class="btn btn-light"&gt;Default&lt;/button&gt;
+
+                      &lt;button type="button" class="btn btn-light disabled"&gt;Default&lt;/button&gt;
+
+
+                      &lt;div class="btn-group"&gt;
+                        &lt;a class="btn btn--outline-light"&gt;Split&lt;/a&gt;
+                          &lt;button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split pl-2 text-center pr-3 border-right-0 border-top-0 border-bottom-0" data-toggle="dropdown"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;button type="button" class="btn btn-danger"&gt;Distructive&lt;/button&gt;  
+
+                      &lt;button type="button" class="btn btn-danger disabled"&gt;Disabled&lt;/button&gt;
+
+                      &lt;button type="button" class="btn btn-link"&gt;plain-button&lt;/button&gt;
+
+                      &lt;button type="button" class="btn btn-link disabled"&gt;Plain button-disabled&lt;/button&gt;
+
+          h3.mt-5.mx-3
+            | Button Sizes
+          .p-5.bg-white.mx-3
+            button.btn.btn-primary.btn-sm.mr-5[type="button"]
+              | Small 
+            button.btn.btn-primary.mr-2.mb-3.mt-3[type="button"]
+              | Default
+          .bg-light.mx-3.mb-3.position-relative
+                button.btn.btn-small.btn-light.m-3.position-absolute[type="button" onclick="copyToClipboard('#buttons')"  style="top:5px; right:5px" data-toggle="tooltip" data-placement="top" title="Copy to clipboard"]
+                    | Copy
+                pre.pre-scrollable.p-5.text-dark   
+                  code#buttons
+                    | &lt;button type="button" class="btn btn-primary btn-sm"&gt;small&lt;/button&gt;
+                      &lt;button type="button" class="btn btn-primary"&gt;Default&lt;/button&gt;

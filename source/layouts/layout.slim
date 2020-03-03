@@ -1,13 +1,29 @@
-doctype html
-html
-  head
-    meta charset = "utf-8"
-    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-    meta content="width=device-width, initial-scale=0.9" name="viewport"
-    title = "#{current_page.data.title} - Flock Styleguide"
-    = favicon_tag 'images/favicon.ico'
-    = stylesheet_link_tag './main'
-    = javascript_include_tag './all'
 
-  body(class="#{page_classes}")
-    = yield
+
+doctype html
+html[lang=""]
+  head
+    meta[charset="utf-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    link[rel="stylesheet" href="/stylesheets/avatar.css"]
+    link[rel="stylesheet" href="/stylesheets/color.css"]
+    link[rel="stylesheet" href="/stylesheets/spatial.css"]
+    link[rel="stylesheet" href="/stylesheets/typography.css"]
+    link[rel="stylesheet" href="/stylesheets/alerts.css"]
+    link[href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"]
+   
+    link[rel="link" href="index"]
+    link[rel="link" href="color"]
+    link[rel="link" href="foundation"]
+    link[rel="link" href="typography"]
+    link[rel="link" href="spatial"]
+    link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
+    script[src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"]
+    script[src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"]
+    script[type="text/javascript" src="../javascripts/all.js"]
+
+
+  body
+     
+        = yield

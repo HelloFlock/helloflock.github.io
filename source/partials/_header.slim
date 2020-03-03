@@ -1,15 +1,22 @@
-header.navbar.navbar-static-top.navbar-flock role="banner"
-  .navbar-header
-    button.navbar-toggle.collapsed aria-controls="bs-navbar" aria-expanded="false" data-target="#flock-navbar" data-toggle="collapse" type="button" 
-      span.sr-only Toggle navigation
-      i.icon.ion-navicon
-    a.navbar-brand href="/"
-      img alt="Brand" src="images/flock-logo.png" /
-  nav#flock-navbar.navbar-collapse.collapse aria-expanded="false"
-    ul.nav.navbar-nav.navbar-right
-      li
-        a href="#"  Components
-      li
-        a href="#"  JavaScript
-      li
-        a href="#"  Spaces
+  style
+    | .light-dark { color:#566071}
+  body.bg-light
+    header.navbar-static-top.d-flex.justify-content-between.align-items-center role="banner"
+        a.navbar-brand href="/"
+          img alt="Brand" src="/images/flock-logo.png" class="w-50 ml-3 "	
+        .div [style="text-color:#E7F3FC !important";]
+          .nav-item.d-inline-block class=(page == 'colors' ? 'active' : '') 
+            a.nav-link.mx-3.light-dark[role="presentation" href="/foundation/colors"]
+                  | Foundations
+          .nav-item.d-inline-block class=(page == 'button' ? 'active' : '') 
+           	a.nav-link.mx-3.light-dark[role="presentation" href="/components/button"]
+                  | Components
+          .nav-item.d-inline-block class=(page == 'cta' ? 'active' : '') 
+           	a.nav-link.mx-3.light-dark[role="presentation" href="/messaging/cta"]
+                  | Messaging
+
+
+   
+
+      
+
